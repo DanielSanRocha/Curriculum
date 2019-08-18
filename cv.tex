@@ -1,0 +1,278 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this
+% font to one that does come with Windows or comment out the font line
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-1cm} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{1cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+{\Large\Letter} danielsantanarocha@gmail.com \ {\Large\Telefon} (021) 99730-4763 \newline % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Daniel Santana Rocha} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\end{center}
+\section{Resumo}
+
+Possui graduação em Matemática Aplicada com ênfase em Computação Científica pela Universidade Federal do Rio de Janeiro (2016), mestrado em Matemática pelo Instituto de Matemática Pura e Aplicada (2015). Atualmente é doutorando pelo Instituto de Matemática Pura e Aplicada.
+\\ \\
+Tem experiência na área de Matemática, com ênfase em Geometria Algébrica, atuando principalmente no tema de limite de séries lineares.
+\\ \\
+Experiência na área de Machine Learning e tratamento de grandes dados com ênfase em classificação e extração de features textuais (TFIDF, Word2Vec, Doc2Vec, Modelos classificadores, Redes Neurais) com tecnólogias como: sklearn, gensim, pandas, Google BigQuery, keras (tensorflow).
+\\ \\
+Experiência na arquitetura de big data com tecnologias como Hadoop, Spark (pyspark, scala) e Google BigQuery.
+\\ \\
+Tem experiência em Linguagem de Programação C, C\#, C++, Python, Java, Scala, PHP, Javascript.
+\\ \\
+Tem experiência com banco de dados como MySQL, Redis, Elasticsearch, Mongo, Openlink Virtuoso (Linguagem SPARQL)
+\\ \\
+Tem experiência em instalação e administração de servidores e banco de dados FTP, PROXY, APACHE, MySQL e Mongo.
+\\ \\
+Tem experiência em programação para celulares android nativo em Java e web interfaces com React e Vue.
+
+
+%----------------------------------------------------------------------------------------
+%	Sobre Mim
+%----------------------------------------------------------------------------------------
+\section{Sobre Mim}
+Sou apaixonado por matemática e computação, ainda me questiono se sou um progamador que sabe matemática ou um matemático que programa =).
+Começando com 13/14 anos, ingressei no programa de mestrado em matemática pura no IMPA e logo em seguida prossegui para meu doutorado nesta mesma instituição e graduação na UFRJ (concomitanmente) especializando-se na área de Geometria Algébrica, mais especificamente em Curvas Algébricas.
+
+Durante meu mestrado, trabalhei junto a uma empresa focada em pesquisa eleitoral onde pude explorar como aplicar os conceitos da matemática para agregar valor para o dia-a-dia de uma empresa. Nesta empresa, utilizando-se de
+tecnologias como C++ (Qt), MySQL, Java, PHP, HTML+Javascript+CSS implementei diversas soluções para automatização de processos corriqueiros na empresa como:
+
+- Calculo do resultado da pesquisa eleitora com margem de erro e graficos de cruzamento com metadados dos entrevistados. (PHP + HTML, Java)
+
+- Geração de relatório em libreoffice (ferramenta em java) automática com resultado da pesquisa e personalização de cruzamentos e gráficos para o cliente.
+
+Em uma segunda fase junto a esta empresa, trabalhei com a criação de aplicativos Android nativo com foco em auxiliar a administração da campanhas eleitorais.
+
+Durante meados de 2017 e 2018, trabalhei em um projeto de StartUp com foco no ramo de alimentação. Nesta startup, trabalhei com diversas tecnologias como NodeJS + Express para REST Server, Mongo, Web application em Vue, administração de servidores linux e ganhei experiência com organização de projetos e o modelo Scrum.
+
+Em 2019 ingressei na área de Big Data da Globo.com onde trabalho na equipe de Content Knowledge, equipe focada em extração de metadados do conteúdo publicado. Neste trabalho adquiri experiência com diversas ferramentas de machine learning e análise de dados como:
+
+- scikit-learn, Keras (Tensorflow), spark (pyspark e scala), BigQuery, Cluster Hadoop
+com um grande foco em análise textual.
+
+Adquiri também experiência com integrações com a plataforma de publicação e infraestrutura da globo.com utilizando-se de teconologias como
+React, Elasticsearch, Loopback 2 e Tsuru.
+
+Trabalho também com o suporte e manuntenção para uma API baseada no banco Virtuoso (OpenLink) utilizando-se da lingaugem SparQL e com o banco de cache Redis.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{center}
+
+\section{Atuação Profissional}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Janeiro 2019 --- Atualmente}\\
+\gray Employer & \textbf{Globo.com} \hfill Rio de Janeiro, Brasil\\
+\gray Título & \textbf{Analista de Desenvolvimento - Big Data/Content Knowledge}\\
+  & Tecnólogias Utilizadas
+ \\
+ML e Análise de Dados & sklearn, pyspark, jobs em cluster hadoop com scala (spark), Google BigQuery, pandas
+\\
+Banco de Dados & redis, virtuoso, elasticsearch
+\\
+Front End & Front-end web em React
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Julho 2017 --- Novembro 2018}\\
+\gray Employer & \textbf{FoodJeckt (StartUp)} \hfill Rio de Janeiro, Brasil\\
+\gray Título & \textbf{Sócio/Programador}\\
+ & Tecnologias Utilizadas: REST Server com NodeJS, Front-end em Vue, Servidor linux, Gitlab + Git.
+ \\
+ & Gerente de Projeto (Julho 2017 --- Março 2018)
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Março 2016 --- Junho 2016}\\
+\gray Employer & \textbf{Universidade Federal do Rio de Janeiro - UFRJ} \hfill Rio de Janeiro, Brasil\\
+\gray Título & \textbf{Professor Visitante}\\
+&Lecionou no Curso de Programaçao para Smartphones (Android Nativo, Angular, REST Server).
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Março 2014 --- Junho 2015}\\
+\gray Employer & \textbf{TECHNO Soluções} \hfill São João de Meriti/RJ, Brasil\\
+\gray Título & \textbf{Analista de Sistema}\\
+ & Tecnologias Utilizadas: REST Server com PHP, ERP (Enterprise Resource Planning) em Qt e MySQL, Servidores Linux, Programação de aplicativos em Java para Android nativo com backend REST, Geração de Relatório automática em Java + LibreOffice, Estatística Eleitoral (Parte matemática + gerenciamento de banco em MySQL + front end em PHP/HTML + back end em HHVM).
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Formação Acadêmica/Titulação}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Março 2015 --- Atualmente}\\
+\gray Título & \textbf{Doutorado em Matemática}\\
+\gray Instituto & \textbf{Instituto Nacional de Matemática Pura e Aplicada} \hfill Rio de Janeiro, Brasil \\
+& 	Orientador: Eduardo Esteves \\
+&	Bolsista: Conselho Nacional de Desenvolvimento Científico e Tecnológico
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{2013 --- 2015}\\
+\gray Título & \textbf{Mestrado em Matemática}\\
+\gray Instituto & \textbf{Instituto Nacional de Matemática Pura e Aplicada} \hfill Rio de Janeiro, Brasil \\
+& 	Orientador: Eduardo Esteves \\
+&	Co-orientador: Emanuel A.S. \\
+&	Bolsista: Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
+&	Título da Dissertação: Limite de Pontos de Weierstrass, Ano de obtenção: 2015
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Janeiro 2015 --- Março 2016}\\
+\gray Título & \textbf{Graduação em Matemática Aplicada}\\
+\gray Instituto & \textbf{Universidade Federal do Rio de Janeiro - UFRJ} \hfill Rio de Janeiro, Brasil \\
+\gray Ênfase & \textbf{Computação Científica}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Experiências}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Linguagens de Programação & C++, Java, Scala, Python, Javascript, PHP, SQL, C\# \\
+Protocolos & XML, JSON, REST, TCP/IP, HTTP \\
+Banco de Dados & MongoDB, MySQL, Redis, Elasticsearch \\
+Ferramentas & Git, GitLab, Latex, Apache \\
+Frameworks  & Spark (scala e pyspark), pandas, scikit-learn, React, Express (NodeJS), Vue, Qt, Cordova, Bootstrap, Unity, Angular \\
+% Ambientes \& Design Patterns  & \multicolumn{1}{p{10cm}}{\raggedright Ambiente Web (HTML+CSS+Javascript), Programação Orientada a Objetos (C++, Java, PHP, C\#), Programação Orientada a Funções (Javascript), Test Driven Development (Node + mocha + chai / java / Qt)} \\
+Outros & Análise Textual para ML (Word2Vec, Doc2Vec, TFIDF), Gaussian Process, Economia Matemática
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Português & Compreende Bem, Fala Bem, Lê Bem, Escreve Bem.\\
+Inglês & Compreende Bem, Fala Bem, Lê Bem, Escreve Bem.\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Prizes and Titles
+%----------------------------------------------------------------------------------------
+
+\section{Prêmios Títulos}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+2013 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Prata na Olimpíada de Matemática do Cone Sul} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Ouro na OMCPLP, Olimpíada de Matemática da Comunidade dos Países Língua Portuguesa} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na IYPT Brasil, INTERNATIONAL YOUNG PHYSICISTS' TOURNAMENT} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OBF, Olimpíada Brasileira de Física} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OBM, Olimpíada Brasileira de Matemática} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OQRJ, Olimpíada Brasileira de Química do Estado do Rio de Janeiro} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Ouro na OMCPLP, Olimpíada de Matemática da Comunidade dos Países de Língua Portuguesa} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Prata na IJSO Brasil, International Junior Science Olympiad} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OMERJ, OMERJ - Olimpíada de Matemática do Estado do Rio de Janeiro} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Ouro na OBF, Olimpíada Brasileira de Física} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Ouro na OBM, Olimpíada Brasileira de Matemática} \\
+2010 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OBA, Olimpiada Brasileira de Astronomia} \\
+2010 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Bronze na OBM, Olimpíada Brasileira de Matemática} \\
+2009 & \multicolumn{1}{p{15cm}}{\raggedright Medalha de Prata na OMERJ, OMERJ - Olimpíada de Matemática do Estado do Rio de Janeiro}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\section{Produção - Entrevistas, mesas redondas, programas e comentários na
+mídia}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright A medalha de ouro nas Olimpíadas de matemática na comunidade dos
+países da Língua Portuguesa., 2012} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright É possível Estudar Matemática sem sofrer, 2012} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright A medalha de ouro nas Olimpíadas de matemática na comunidade dos países da Língua Portuguesa., 2012. (Programa, Programa de Rádio ou TV)} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright Reportagem Fantástico. (Programa, Programa de Rádio ou TV)} \\
+Link & \multicolumn{1}{p{13cm}}{\raggedright Canal do youtube com entrevistas: https://www.youtube.com/channel/UCvC92Y82h2cBcGgGWBcwBoQ/featured}
+\end{tabular}
+
+\end{center}
+\end{document}
