@@ -1,0 +1,272 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this
+% font to one that does come with Windows or comment out the font line
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, oneside, final]{report} % Paper options using the scrartcl class
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\addtolength{\voffset}{-1cm} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{1cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+\begin{document}
+
+\begin{center} 
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Daniel Santana Rocha} % Your name at the top
+
+\vspace{1.5cm} 
+
+\end{center}
+\section{Summary}
+
+I have a undegraduate degree in Mathematics Applied with enphasis in Scientific Computation in UFRJ (Federal University of Rio de Janeiro - 2016) and master in mathematics by IMPA (Instituto Nacinal de Matemática Pura e Aplicada - 2015).
+\\ \\
+Has experience in Mathematics in the area of Algebraic Geometry, Number Theory and Combinatorics.
+\\ \\
+Expertise in Machine Learning and bigdata with enphasis in NLP (sklearn, gensim, tensorflow, scipy, numpy, pytorch, doc2vec, word2vec and several other technologies and frameworks) and Reinforcement Learning (Thomson sampling and Q Learning).
+\\ \\
+Expertise in the area of bigdata with Hadoop, Spark (pyspark, scala), Google Cloud (BigQuery, VertexAI), Databricks.
+\\ \\
+Advanced knowledge: Python, Scala, Rust for machine learning and bigdata infrastructure. Good knowledge of javascript (Vue, ReactJs) for web interfaces.
+\\ \\
+Expertise with databases like Cassandra, Redis, Elasticsearch, Mongo, Openlink Virtuoso (SPARQL), InfluxDB and Others
+\\ \\
+Worked with several Big Data technologies like Kafka, Spark.
+\\ \\
+Advanced knowledge in containerized deployments with docker + docker compose, kubernetes, docker-swarm, VMs and automation of deployments in these technologies.
+\\ \\
+Basic knowledge in devops for maintenance of Kubernetes and docker swarm.
+\\ \\
+Expertise in linux server administration.
+\\ \\
+Very advanced english (speak since childhood), basic knowledge of french.
+
+%----------------------------------------------------------------------------------------
+%	Sobre Mim
+%----------------------------------------------------------------------------------------
+\section{About Me}
+I love Mathematics and Programming, almost the Master more young of Brazil, also work with programming since 15 years in ml/bigdata environment like electoral statistics.
+Already worked for Globo (higher rank Machine Learning Engineer focused in NLP, MAB (AB with reinforcement learning) and automated deploy) and Ifood (Machine Learn Engineer/Data Scientist focused in calculating the time of arrival of delivery).
+
+
+\section{Projects}
+
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Employer & Personal Challenge\\
+  
+  \gray Title & \textbf{Snake Game with Q-Learning}\\
+    & Technolgies
+  Pytthon, pandas, tensorflow.
+
+  https://github.com/DanielSanRocha/SnakeAI
+  
+  https://danielsanrocha.com/snakeai
+  \\
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Employer & Personal Use\\
+  \gray Title & \textbf{Xatu Observer - Monitor of APIs, Services, Docker Containers}\\
+    & Technolgies
+  Scala, telegram API, finagle, MySQL, Redis, ElasticSearch.
+
+  Monitor and collect logs and send it to elasticsearch for analysis.
+
+  https://github.com/danielsanrocha/xatu-observer  
+  \\
+\end{tabularx}
+
+  
+\vspace{12pt}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{center}
+
+\section{Professinal History}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{February 2025 --- Currently}\\
+\gray Employer & \textbf{WL3i - Fundo de Investimentos} \hfill Rio de Janeiro, Brasil\\
+\gray Title & \textbf{Mathematician and Software Developer}\\
+Tech & Scala, Finatra, Finagle, python, pandas.\\
+\gray About & Data mining and system development for finding and negotiating the acquisiton of "precatórios" rights.
+\end{tabularx}
+  
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{July 2024 --- January 2025}\\
+\gray Employer & \textbf{iFood} \hfill Sao Paulo, Brasil\\
+\gray Title & \textbf{Machine Learn Engineer 2B}\\
+Tech & Kafka, databricks, aws, rust, scala, python, scala, java, redis. \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{January 2019 --- February 2024}\\
+\gray Employer & \textbf{Globo} \hfill Rio de Janeiro, Brasil\\
+\gray Title & \textbf{Specialist Bigdata Machine Learning Engineer}\\
+TECH & NLP, Bert, Kafka, thompson sampling, google cloud, sklearn, python, scala, hadoop, spark, java, redis, virtuoso, elasticsearch, kibana, docker, docker swarm, kubernetes, gensim, tensorflow, pytorch and other technologies. \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Março 2016 --- Junho 2016}\\
+\gray Employer & \textbf{Federal University of Rio de Janeiro - UFRJ} \hfill Rio de Janeiro, Brasil\\
+\gray Title & \textbf{Professor}\\
+Tech & Professor at UFRJ programming (Java, tomcat, Android, Angular, REST Server).
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Março 2014 --- Junho 2015}\\
+\gray Employer & \textbf{TECHNO Soluções} \hfill São João de Meriti/RJ, Brasil\\
+\gray Title & \textbf{Trainee in Bigdata Analisis for Electoral Statistics}\\
+ Tech & PHP, MySQL, Java
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Academic}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{2016 --- StandBy}\\
+\gray Title & \textbf{PhD in Mathematics}\\
+\gray Institute & \textbf{Instituto Nacional de Matemática Pura e Aplicada} \hfill Rio de Janeiro, Brasil \\
+& 	Orientador: Eduardo Esteves \\
+&	Bolsista: Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
+&	Título da Dissertação: Limit of Linear Series
+\end{tabularx}
+
+\vspace{12pt}
+
+\section{Academic}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{2013 --- 2015}\\
+\gray Title & \textbf{Master in Mathematics}\\
+\gray Institute & \textbf{Instituto Nacional de Matemática Pura e Aplicada} \hfill Rio de Janeiro, Brasil \\
+& 	Orientador: Eduardo Esteves \\
+&	Co-orientador: Emanuel A.S. \\
+&	Bolsista: Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
+&	Título da Dissertação: Limite de Pontos de Weierstrass, Ano de obtenção: 2015
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Janeiro 2015 --- Março 2016}\\
+\gray Título & \textbf{Graduação em Matemática Aplicada}\\
+\gray Instituto & \textbf{University of Rio de Janeiro - UFRJ} \hfill Rio de Janeiro, Brasil \\
+\gray Ênfase & \textbf{Cientific Computation}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Expertises}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Language & Python, Scala, Rust, SQL (BigQuery and MySQL/MariaDB), Javascript, Haskell \\
+Protocols & XML, JSON, REST, TCP/IP, HTTP, HTTPS \\
+Databases & Cassandra, SQL Databases, MongoDB, Redis, Elasticsearch \\
+Tools & Git, GitLab, Latex, Nginx, Kafka \\
+Frameworks  & Spark (scala and pyspark), pandas, scikit-learn, gensim, spacy, React, Express (NodeJS), Vue, sklearn \\
+Others & NLP (Word2Vec, Doc2Vec, TFIDF, Bert), ML (Thompson sampling, Q learning) \\
+Others &  Gaussian Process, Microeconomics
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Português & Nativo.\\
+English & Advanced.\\
+French & Understand little, Speak little, Write reasonable, Reading advanced.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Prizes and Titles
+%----------------------------------------------------------------------------------------
+
+\section{Titles}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+2013 & \multicolumn{1}{p{15cm}}{\raggedright Silver Medal Olimpíada de Matemática do Cone Sul} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Gold Medal na OMCPLP, Olimpíada de Matemática da Comunidade dos Países Língua Portuguesa} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na IYPT Brasil, INTERNATIONAL YOUNG PHYSICISTS' TOURNAMENT} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na OBF, Olimpíada Brasileira de Física} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na OBM, Olimpíada Brasileira de Matemática} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Bronze na OQRJ, Olimpíada Brasileira de Química do Estado do Rio de Janeiro} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Gold Medal na OMCPLP, Olimpíada de Matemática da Comunidade dos Países de Língua Portuguesa} \\
+2012 & \multicolumn{1}{p{15cm}}{\raggedright Silver Medal na IJSO Brasil, International Junior Science Olympiad} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na OMERJ, OMERJ - Olimpíada de Matemática do Estado do Rio de Janeiro} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Gold Medal na OBF, Olimpíada Brasileira de Física} \\
+2011 & \multicolumn{1}{p{15cm}}{\raggedright Gold Medal na OBM, Olimpíada Brasileira de Matemática} \\
+2010 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na OBA, Olimpiada Brasileira de Astronomia} \\
+2010 & \multicolumn{1}{p{15cm}}{\raggedright Bronze Medal na OBM, Olimpíada Brasileira de Matemática} \\
+2009 & \multicolumn{1}{p{15cm}}{\raggedright Silver Medal na OMERJ, OMERJ - Olimpíada de Matemática do Estado do Rio de Janeiro}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\section{Productions - Interviews, table, programs e comments midia}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright A Gold medal nas Olimpíadas de matemática na comunidade dos
+países da Língua Portuguesa., 2012} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright É possível Estudar Matemática sem sofrer, 2012} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright A medalha de ouro nas Olimpíadas de matemática na comunidade dos países da Língua Portuguesa., 2012. (Programa, Programa de Rádio ou TV)} \\
+ROCHA, D. S. & \multicolumn{1}{p{13cm}}{\raggedright Reportagem Fantástico. (Programa, Programa de Rádio ou TV)} \\
+Link & \multicolumn{1}{p{13cm}}{\raggedright Canal do youtube com entrevistas: https://www.youtube.com/channel/UCvC92Y82h2cBcGgGWBcwBoQ/featured}
+\end{tabular}
+
+\end{center}
+\end{document}
