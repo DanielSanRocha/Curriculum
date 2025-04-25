@@ -26,7 +26,6 @@
 
 \documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
 \usepackage[margin=2.0cm]{geometry}
-\usepackage{scrpage2} % Provides headers and footers configuration
 \usepackage{titlesec} % Allows creating custom \section's
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage{tabularx,colortbl} % Advanced table configurations
@@ -36,8 +35,6 @@
 % \setmainfont{Adobe Garamond Pro} % Main document font
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
-
-\pagestyle{scrheadings} % Print the headers and footers on all pages
 
 \addtolength{\voffset}{-1cm} % Adjust the vertical offset - less whitespace at the top of the page
 \addtolength{\textheight}{1cm} % Adjust the text height - less whitespace at the bottom of the page
@@ -49,12 +46,6 @@
 %----------------------------------------------------------------------------------------
 
 \renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
-
-\cofoot{
-\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
-
-{\Large\Letter} danielsantanarocha@gmail.com \ {\Large\Telefon} (021) 99730-4763 \newline % Your email address and phone number
-}
 
 %----------------------------------------------------------------------------------------
 
@@ -130,7 +121,26 @@ Trabalho também com o suporte e manuntenção para uma API baseada no banco Vir
 \section{Atuação Profissional}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-\gray Periodo & \textbf{Janeiro 2019 --- Atualmente}\\
+  \gray Period & \textbf{Fevereiro 2025 --- Currently}\\
+  \gray Employer & \textbf{WL3i - Fundo de Investimentos} \hfill Rio de Janeiro, Brasil\\
+  \gray Title & \textbf{Cientista de Dados e Desenvolvedor Back-end}\\
+  Tech & Scala, Finatra, Finagle, python, pandas, redis, elasticsearch.\\
+  \gray About & Mineração de Dados de precatórios e desenvolvimento de sistemas de buscas e análise jurídica automática.
+\end{tabularx}
+    
+\vspace{12pt}
+  
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Period & \textbf{Julho 2024 --- Janeiro 2025}\\
+  \gray Employer & \textbf{iFood} \hfill Sao Paulo, Brasil\\
+  \gray Title & \textbf{Machine Learn Engineer 2B}\\
+  Tech & Kafka, databricks, aws, rust, scala, python, scala, java, redis. \\
+\end{tabularx}
+  
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Janeiro 2019 --- Fevereiro de 2024}\\
 \gray Employer & \textbf{Globo.com} \hfill Rio de Janeiro, Brasil\\
 \gray Título & \textbf{Analista de Desenvolvimento - Big Data/Content Knowledge}\\
   & Tecnólogias Utilizadas
